@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,8 @@
 		529D6A892430F42B00167E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		529D6A8C2430F42B00167E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		529D6A8E2430F42B00167E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529D6A942430F64600167E67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		529D6A952430F7C100167E67 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,8 @@
 			children = (
 				529D6A7F2430F42B00167E67 /* MyTwitterDuplicate */,
 				529D6A7E2430F42B00167E67 /* Products */,
+				529D6A942430F64600167E67 /* README.md */,
+				529D6A952430F7C100167E67 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +60,12 @@
 		529D6A7F2430F42B00167E67 /* MyTwitterDuplicate */ = {
 			isa = PBXGroup;
 			children = (
+				529D6A9B2430F90300167E67 /* Model */,
+				529D6A9A2430F90000167E67 /* View */,
+				529D6A992430F8FE00167E67 /* ViewModel */,
+				529D6A982430F8FA00167E67 /* Controller */,
+				529D6A972430F8F300167E67 /* API */,
+				529D6A962430F8E500167E67 /* Utilities */,
 				529D6A802430F42B00167E67 /* AppDelegate.swift */,
 				529D6A822430F42B00167E67 /* SceneDelegate.swift */,
 				529D6A842430F42B00167E67 /* ViewController.swift */,
@@ -65,6 +75,48 @@
 				529D6A8E2430F42B00167E67 /* Info.plist */,
 			);
 			path = MyTwitterDuplicate;
+			sourceTree = "<group>";
+		};
+		529D6A962430F8E500167E67 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		529D6A972430F8F300167E67 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		529D6A982430F8FA00167E67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		529D6A992430F8FE00167E67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		529D6A9A2430F90000167E67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		529D6A9B2430F90300167E67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +155,7 @@
 				};
 			};
 			buildConfigurationList = 529D6A782430F42B00167E67 /* Build configuration list for PBXProject "MyTwitterDuplicate" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
