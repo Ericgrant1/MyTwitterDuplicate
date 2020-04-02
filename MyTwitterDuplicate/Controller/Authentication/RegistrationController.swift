@@ -126,7 +126,7 @@ class RegistrationController: UIViewController {
                                           profileImage: profileImage)
         
         AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
-            print("DEBUG: Sing up successful...")
+            print("DEBUG: Sign up successful...")
             print("DEBUG: Handle update user interface here...")
         }
         
