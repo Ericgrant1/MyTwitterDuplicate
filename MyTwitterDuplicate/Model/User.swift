@@ -6,7 +6,6 @@
 //  Copyright © 2020 Eric Grant. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct User {
