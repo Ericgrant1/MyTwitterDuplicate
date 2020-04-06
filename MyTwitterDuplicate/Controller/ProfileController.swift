@@ -15,7 +15,7 @@ class ProfileController: UICollectionViewController {
     
     // MARK: - Properties
     
-    private let user: User
+    private var user: User
     
     private var tweets = [Tweet]() {
         didSet {
@@ -109,9 +109,19 @@ extension ProfileController: UICollectionViewDelegateFlowLayout {
 extension ProfileController: ProfileHeaderDelegate {
     func handleEditingProfileFollow(_ header: ProfileHeader) {
         
-        UserService.shared.followUser(uid: user.uid) { (ref, error) in
-            
-        }
+        print("DEBUG: User is followed is \(user.isFollowed) before button tap")
+        
+        if user.isFollowed {
+            UserService.shared.unfollowUser(uid: user.uid) { (error, ref) in
+                self.user.isFollowed = false
+                print("DEBUG: User is followed is \(self.user.isFollowed) after button tap")
+            }
+        } else {
+            UserService.shared.followUser(uid: user.uid) { (ref, error) in
+                self.user.isFollowed = true
+                print("DEBUG: User is followed is \(self.user.isFollowed) after button tap")
+            }
+        }        
     }
     
     func handleDismissal() {
