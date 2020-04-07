@@ -153,7 +153,7 @@ class TweetHeader: UICollectionReusableView {
         captionLabel.anchor(top: stack.bottomAnchor,
                             left: leftAnchor,
                             right: rightAnchor,
-                            paddingTop: 20,
+                            paddingTop: 12,
                             paddingLeft: 16,
                             paddingRight: 16)
         
@@ -172,7 +172,7 @@ class TweetHeader: UICollectionReusableView {
         statsView.anchor(top: dateLabel.bottomAnchor,
                          left: leftAnchor,
                          right: rightAnchor,
-                         paddingTop: 20,
+                         paddingTop: 12,
                          height: 40)
         
         let actionStack = UIStackView(arrangedSubviews: [commentButton,
