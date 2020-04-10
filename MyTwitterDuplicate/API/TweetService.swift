@@ -90,6 +90,9 @@ struct TweetService {
         
         if tweet.didLike {
             // remove like data from firebase
+            REF_USER_LIKES.child(uid).child(tweet.tweeetID).removeValue { (error, ref) in
+                REF_TWEET_LIKES.child(tweet.tweeetID).removeValue(completionBlock: completion)
+            }
         } else {
             // add like data to firebase
             REF_USER_LIKES.child(uid).updateChildValues([tweet.tweeetID: 1]) { (error, ref) in
