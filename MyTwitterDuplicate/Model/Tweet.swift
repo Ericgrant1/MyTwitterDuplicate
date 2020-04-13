@@ -18,6 +18,8 @@ struct Tweet {
     var didLike = false
     var replyingTo: String?
     
+    var isReply: Bool { return replyingTo != nil }
+    
     init(user: User, tweetID: String, dictionary: [String: Any]) {
         self.user = user
         self.tweeetID = tweetID
