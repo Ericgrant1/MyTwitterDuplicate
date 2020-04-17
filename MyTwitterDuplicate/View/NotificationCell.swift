@@ -18,9 +18,7 @@ class NotificationCell: UITableViewCell {
     // MARK: - Properties
     
     var notification: Notification? {
-        didSet {
-            configure()
-        }
+        didSet { configure() }
     }
     
     weak var delegate: NotificationCellDelegate?

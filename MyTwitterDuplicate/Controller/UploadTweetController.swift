@@ -111,7 +111,9 @@ class UploadTweetController: UIViewController {
             username = username.trimmingCharacters(in: .punctuationCharacters)
             
             UserService.shared.fetchUser(withUsername: username) { mentionedUser in
-                NotificationService.shared.uploadNotification(toUser: mentionedUser, type: .mention, tweetID: tweetID)
+                NotificationService.shared.uploadNotification(toUser: mentionedUser,
+                                                              type: .mention,
+                                                              tweetID: tweetID)
             }
         }
     }
